@@ -1,0 +1,54 @@
+<!-- fetch produk -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10 p-5" id="containerproduk"></div>  
+<!-- <div class="card w-full bg-base-100 shadow-xl">
+    <img
+      src="/assets/55.png"
+      alt="Shoes"
+      class="h-32 md:h-48 lg:h-64 object-cover w-full"
+    />
+    <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+    </div>
+</div> -->
+<script>
+// get all data
+let allproduk = null;
+fetch("assets/produk.json")
+.then(response=>response.json())
+.then(data=>{
+  allproduk=data;
+  console.log(allproduk);
+  addDataToHTML();
+})
+// masukin data ke html
+// let containerproduk= document.querySelector('.grid.grid-cols-1.sm:grid-cols-2.md:grid-cols-3.gap-5.mt-10.p-5');
+let containerproduk= document.querySelector('#containerproduk');
+function addDataToHTML(){
+  // buat elemen html foto
+  allproduk.forEach(produk=>{
+    let divproduk = document.createElement('div');
+    divproduk.classList.add('card', 'w-full', 'bg-base-100', 'shadow-xl');
+    divproduk.innerHTML= `
+        <img 
+            src="${produk.foto}"
+            class="h-32 md:h-48 lg:h-64 object-cover w-full">  
+        <div class="card-body">
+            <h2 class="card-tittle">${produk.nama}</h2>
+            <p>${produk.deskripsi}</p>
+        </div>    
+    `
+
+    // masukin ke div parent
+    containerproduk.appendChild(divproduk);
+  })
+}
+</script>
+<div class="flex justify-center mt-5">
+    <button
+      class="bg-gold border-2 border-black text-black font-bold py-4 px-8 rounded-full transform hover:scale-110 transition duration-300"
+      style="background-color: gold; color: black"
+    >
+      Product List
+    </button>
+</div>
