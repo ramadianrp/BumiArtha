@@ -1,0 +1,79 @@
+[
+    {
+        "id":1,
+        "nama":"Power Pack",
+        "deskripsi":"Penjelasan power pack",
+        "spek":{
+            "dimensi":"{luas benda}",
+            "tipe":"{tipe produk}",
+            "versi":"{versi produk}"
+        },
+        "foto":"assets/21.png"
+    },
+    {
+        "id":2,
+        "nama":"Compressor",
+        "deskripsi":"Penjelasan compressor",
+        "spek":{
+            "dimensi":"{luas benda}",
+            "tipe":"swan hwp30",
+            "versi":"{versi produk}"
+        },
+        "foto":"assets/55.png"
+    },
+    {
+        "id":3,
+        "nama":"Cooler",
+        "deskripsi":"Penjelasan power pack",
+        "spek":{
+            "dimensi":"{luas benda}",
+            "tipe":"{tipe produk}",
+            "versi":"{versi produk}"
+        },
+        "foto":"assets/67.png"
+    },
+    {
+        "id":4,
+        "nama":"Radiator",
+        "deskripsi":"Penjelasan power pack",
+        "spek":{
+            "dimensi":"{luas benda}",
+            "tipe":"{tipe produk}",
+            "versi":"{versi produk}"
+        },
+        "foto":"assets/68.png"
+    },
+    {
+        "id":5,
+        "nama":"Jack HYD",
+        "deskripsi":"Penjelasan power pack",
+        "spek":{
+            "dimensi":"{luas benda}",
+            "tipe":"{tipe produk}",
+            "versi":"{versi produk}"
+        },
+        "foto":"assets/73.png"
+    },
+    {
+        "id":6,
+        "nama":"Vibrator",
+        "deskripsi":"Penjelasan power pack",
+        "spek":{
+            "dimensi":"{luas benda}",
+            "tipe":"{tipe produk}",
+            "versi":"{versi produk}"
+        },
+        "foto":"assets/75.png"
+    },
+    {
+        "id":7,
+        "nama":"Gearbox",
+        "deskripsi":"Penjelasan power pack",
+        "spek":{
+            "dimensi":"{luas benda}",
+            "tipe":"{tipe produk}",
+            "versi":"{versi produk}"
+        },
+        "foto":"assets/76.png"
+    }
+]
