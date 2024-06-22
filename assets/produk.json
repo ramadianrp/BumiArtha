@@ -1,79 +1,65 @@
 [
     {
-        "id":1,
-        "nama":"Power Pack",
-        "deskripsi":"Penjelasan power pack",
-        "spek":{
-            "dimensi":"{luas benda}",
-            "tipe":"{tipe produk}",
-            "versi":"{versi produk}"
-        },
+        "id":"20",
+        "kategori":"Hydraulic",
+        "nama":"Hydraulic Cylinder",
+        "deskripsi":"Hidrolik tabung warna biru",
+        "foto":"assets/20.png"
+    },
+    {
+        "id":"21",
+        "kategori":"Hydraulic",
+        "nama":"Hydraulic Cylinder",
+        "deskripsi":"Hidrolik tabung warna kuning",
         "foto":"assets/21.png"
     },
     {
-        "id":2,
-        "nama":"Compressor",
-        "deskripsi":"Penjelasan compressor",
-        "spek":{
-            "dimensi":"{luas benda}",
-            "tipe":"swan hwp30",
-            "versi":"{versi produk}"
-        },
-        "foto":"assets/55.png"
+        "id":"22",
+        "kategori":"Hydraulic",
+        "nama":"Hydraulic Cylinder",
+        "deskripsi":"Hidrolik tabung warna kuning",
+        "foto":"assets/22.png"
     },
     {
-        "id":3,
-        "nama":"Cooler",
-        "deskripsi":"Penjelasan power pack",
-        "spek":{
-            "dimensi":"{luas benda}",
-            "tipe":"{tipe produk}",
-            "versi":"{versi produk}"
-        },
-        "foto":"assets/67.png"
+        "id":"24",
+        "kategori":"Hydraulic",
+        "nama":"Hydraulic Pump Piston 2 R230",
+        "deskripsi":"Hydraulic Pump Piston",
+        "foto":"assets/24.png"
     },
     {
-        "id":4,
-        "nama":"Radiator",
-        "deskripsi":"Penjelasan power pack",
-        "spek":{
-            "dimensi":"{luas benda}",
-            "tipe":"{tipe produk}",
-            "versi":"{versi produk}"
-        },
-        "foto":"assets/68.png"
+        "id":"28",
+        "kategori":"Hydraulic",
+        "nama":"HPC Hydraulic Piston Pump P08A3FR01",
+        "deskripsi":"Hidrolik pistom pump keluaran hpc P08A3FR01",
+        "foto":"assets/28.png"
     },
     {
-        "id":5,
-        "nama":"Jack HYD",
-        "deskripsi":"Penjelasan power pack",
-        "spek":{
-            "dimensi":"{luas benda}",
-            "tipe":"{tipe produk}",
-            "versi":"{versi produk}"
-        },
-        "foto":"assets/73.png"
+        "id":"35",
+        "kategori":"Hydraulic",
+        "nama":"Rexus Hydraulic 4WE6G62",
+        "deskripsi":"Directional valve 4WE6G62",
+        "foto":"assets/35.png"
     },
     {
-        "id":6,
-        "nama":"Vibrator",
-        "deskripsi":"Penjelasan power pack",
-        "spek":{
-            "dimensi":"{luas benda}",
-            "tipe":"{tipe produk}",
-            "versi":"{versi produk}"
-        },
-        "foto":"assets/75.png"
+        "id":"41",
+        "kategori":"Hydraulic",
+        "nama":"RRA Hydraulic",
+        "deskripsi":"RRA Hidrolik KHB-G1 -1/2 PN 6000PSI",
+        "foto":"assets/41.png"
     },
     {
-        "id":7,
-        "nama":"Gearbox",
-        "deskripsi":"Penjelasan power pack",
-        "spek":{
-            "dimensi":"{luas benda}",
-            "tipe":"{tipe produk}",
-            "versi":"{versi produk}"
-        },
-        "foto":"assets/76.png"
+        "id":"43",
+        "kategori":"Hydraulic",
+        "nama":"Casting Parts",
+        "deskripsi":"RRA Hidrolik KHB-G1 -1/2 PN 6000PSI",
+        "foto":"assets/43.png"
+    },
+    {
+        "id":"44",
+        "kategori":"power",
+        "nama":"bukan hidrolik",
+        "deskripsi":"RRA Hidrolik KHB-G1 -1/2 PN 6000PSI",
+        "foto":"assets/41.png"
     }
 ]

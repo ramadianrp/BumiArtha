@@ -33,3 +33,127 @@ body {
     }
 }
 
+@media screen and (max-width: 990px) {
+    .list-produk{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 40px;
+      /* width: 100%; */
+    }
+    .list-produk .item{
+        width: 100%;
+    }
+  }
+.produk-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.list-produk{
+    display: flex;
+    gap: 50px 20px;
+    padding: 0 0 50px 0;
+}
+.list-produk {
+    grid-template-columns: auto;
+}
+.list-produk .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    width: 492px;
+    height: 400px;
+    /* max-width: 472px;
+    max-height: 432px; */
+    margin: auto;
+}
+.list-produk .item:hover{
+    background-color: rgb(163, 160, 160);
+}
+.list-produk img{
+    width: 80%;
+    filter: drop-shadow(0 50px 20px #0009)
+}
+.list-produk img#hidrolik{
+    width: 55%;
+}
+.list-produk img#casting{
+    width: 90%;
+}
+.list-produk img#dusting{
+    width: 75%;
+}
+.list-produk .deskripsi-produk{
+    word-wrap: break-word;
+}
+.detail .deskripsi-produk{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 30px;
+    justify-content: center;
+}
+
+.detail .deskripsi-produk .deskripsi{
+    h2{
+        text-align: center;
+    }
+    padding: 0 30px;
+    text-align: justify;
+    width: 70%;
+}
+
+.detail .deskripsi-produk .deskripsi i{
+    width: 100%;
+}
+
+.detail img{
+    width: 300px;
+    height: 300px;
+}
+
+.detail .deskripsi-produk img:hover{
+    transform: scale(1.2) rotate(20deg);
+}
+
+.produk-lain{
+    margin: auto;
+    text-align: center;
+}
+
+.list-produk-detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+    justify-content: center;
+    gap: 35px 20px;
+}
+
+.list-produk-detail .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    min-width: 400px;
+}
+
+.list-produk-detail .item:hover{
+    background-color: rgb(163, 160, 160);
+}
+
+.list-produk-detail .item img{
+    width: 80%;
+}
+
+.list-produk-detail .item p{
+    word-wrap: break-word;
+}
+
+.deskripsi-produk .deskripsi i{
+    margin: auto;
+    text-align: left;
+}
+

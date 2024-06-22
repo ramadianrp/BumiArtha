@@ -1,0 +1,20 @@
+[
+    {
+        "kategori":"Hydraulic",
+        "foto":"assets/41.png",
+        "deskripsi":"Kami menyediakan beragam jenis alat hidrolik termasuk cylinder boom dan cylinder ramp, yang dirancang untuk memberikan performa optimal dan keandalan yang tinggi dalam berbagai aplikasi industri.",
+        "link":"products.html"
+    },
+    {
+        "kategori":"Electric Motor",
+        "foto":"assets/41.png",
+        "deskripsi":"Pilihan terbaik untuk solusi komponen elektrik motor yang andal dan berkualitas tinggi. Kami menyediakan berbagai macam jenis komponen untuk motor elektrik, dirancang untuk memenuhi kebutuhan industri Anda dengan performa yang optimal.",
+        "link":"products.html"
+    },
+    {
+        "kategori":"Generator and Power Transmission",
+        "foto":"assets/61.png",
+        "deskripsi":"Menjadi mitra Anda dalam industri alat berat selama bertahun-tahun, kami menghadirkan solusi generator dan sistem transmisi daya yang terpercaya dan teruji, untuk mendukung kelancaran operasi Anda dengan kehandalan yang tak tertandingi.",
+        "link":"products.html"
+    }
+]
