@@ -21,45 +21,101 @@
         "foto":"assets/22.png"
     },
     {
-        "id":"24",
+        "id":"38",
         "kategori":"Hydraulic",
-        "nama":"Hydraulic Pump Piston 2 R230",
-        "deskripsi":"Hydraulic Pump Piston",
-        "foto":"assets/24.png"
+        "nama":"Yutien Hydraulic Pressure Control Valve RvG",
+        "deskripsi":"Yutien Pilot Operated Relief Valve RvG ",
+        "foto":"assets/38.png"
     },
     {
         "id":"28",
         "kategori":"Hydraulic",
         "nama":"HPC Hydraulic Piston Pump P08A3FR01",
-        "deskripsi":"Hidrolik pistom pump keluaran hpc P08A3FR01",
+        "deskripsi":"Pressure control valve hydraulic HPC P08A3FR01",
         "foto":"assets/28.png"
+    },
+    {
+        "id":"51",
+        "kategori":"Hydraulic",
+        "nama":"Rexus Hydraulic 1635DHI-1263",
+        "deskripsi":"Pressure control valve hydraulic Rexus Hydraulic 1635DHI-1263",
+        "foto":"assets/51.png"
     },
     {
         "id":"35",
         "kategori":"Hydraulic",
         "nama":"Rexus Hydraulic 4WE6G62",
-        "deskripsi":"Directional valve 4WE6G62",
+        "deskripsi":"Directional control valve Rexus Hydraulic Selenoid 4WE6G62",
         "foto":"assets/35.png"
     },
     {
-        "id":"41",
+        "id":"52",
         "kategori":"Hydraulic",
-        "nama":"RRA Hydraulic",
-        "deskripsi":"RRA Hidrolik KHB-G1 -1/2 PN 6000PSI",
-        "foto":"assets/41.png"
+        "nama":"Rexus Hydraulic DC24V",
+        "deskripsi":"Directional control valve Rexus Hydraulic Selenoid DC24V",
+        "foto":"assets/52.png"
     },
     {
-        "id":"43",
+        "id":"34",
         "kategori":"Hydraulic",
-        "nama":"Casting Parts",
-        "deskripsi":"RRA Hidrolik KHB-G1 -1/2 PN 6000PSI",
-        "foto":"assets/43.png"
+        "nama":"Yutien Hydraulic Solenoid Valve DSW-02-3C4-D-A2",
+        "deskripsi":"Yutien Hydraulic Solenoid Directional Control Valve DSW-02-3C4-D-A2",
+        "foto":"assets/34.png"
     },
     {
-        "id":"44",
-        "kategori":"power",
-        "nama":"bukan hidrolik",
-        "deskripsi":"RRA Hidrolik KHB-G1 -1/2 PN 6000PSI",
-        "foto":"assets/41.png"
+        "id":"48",
+        "kategori":"Hydraulic",
+        "nama":"Wofo MF-06 Wan Feng",
+        "deskripsi":"Hydraulic filter Wofo MF-06 Wan Feng",
+        "foto":"assets/48.png"
+    },
+    {
+        "id":"49",
+        "kategori":"Hydraulic",
+        "nama":"Wofo MF-08 Wan Feng",
+        "deskripsi":"Hydraulic filter Wofo MF-08 Wan Feng",
+        "foto":"assets/49.png"
+    },
+    {
+        "id":"50",
+        "kategori":"Hydraulic",
+        "nama":"Wofo MF-04 Wan Feng",
+        "deskripsi":"Hydraulic filter Wofo MF-04 Wan Feng",
+        "foto":"assets/50.png"
+    },
+    {
+        "id":"57",
+        "kategori":"Hydraulic",
+        "nama":"Kawasaki Loader 65Z-V",
+        "deskripsi":"Hydraulic Gear Pumps Kawasaki Loader 65Z-V",
+        "foto":"assets/57.png"
+    },
+    {
+        "id":"54",
+        "kategori":"Hydraulic",
+        "nama":"Duplomatic FV7 Vane Pumps",
+        "deskripsi":"Hydraulic Gear Pumps Duplomatic FV7 Vane Pumps",
+        "foto":"assets/54.png"
+    },
+    {
+        "id":"55",
+        "kategori":"Hydraulic",
+        "nama":"Hydraulic Gear Pumps WA150",
+        "deskripsi":"Hydraulic Gear Pumps WA150",
+        "foto":"assets/55.png"
+    },
+    {
+        "id":"64",
+        "kategori":"Electric",
+        "nama":"Panel Motor Control Center",
+        "deskripsi":"Panel Motor Control Center",
+        "foto":"assets/64.png"
+    },
+    {
+        "id":"61",
+        "kategori":"GenPower",
+        "nama":"Proportional Valve Group (PVG) 100",
+        "deskripsi":"Proportional Valve Group (PVG) 100",
+        "foto":"assets/61.png"
     }
 ]
