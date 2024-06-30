@@ -1,0 +1,47 @@
+<!--detail produk-->
+<div class="detail">
+  <div class="deskripsi-produk">
+    <img src="assets/41.png" alt="">
+    <div class="deskripsi">
+      <h2>Hydraulic</h2>
+      <p>
+        Kami menyediakan beragam jenis alat hidrolik termasuk cylinder boom dan cylinder ramp, yang dirancang untuk memberikan performa optimal dan 
+        keandalan yang tinggi dalam berbagai aplikasi industri.
+      </p>
+    </div>
+  </div>
+  <!--more from us-->
+  <div class="produk-lain">
+    <h2>More From Us</h2>
+    <div class="list-produk-detail">
+      <!--sama kaya produk-->
+    </div>
+  </div>
+</div>
+
+<script>
+  let allproduk = null;
+  fetch("assets/produk.json")
+  .then(response => response.json())
+  .then(data=>{
+    allproduk=data;
+    addDatatoHTML();
+  })
+  let containerproduk = document.querySelector('.list-produk-detail');
+  let kategori = 'Hydraulic';
+  allproduk.forEach(produk => {
+    if(produk.kategori == kategori){
+      function addDatatoHTML(){
+        let divproduk = document.createElement('div');
+        divproduk.classList.add('item');
+        divproduk.innerHTML= 
+        `
+          <img src="${produk.foto}" class="h-32 md:h-48 lg:h-64 object-cover w-full">  
+          <h2>${produk.nama}</h2>
+          <div class="deskripsi-produk">${produk.deskripsi}</div>
+        `
+        containerproduk.appendChild(divproduk);
+      }
+    }
+  });
+</script>

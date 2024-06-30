@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | PT. Bumi Artha Raharja</title>
+    <title>Details | PT. Bumi Artha Raharja</title>
     <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
     <link rel="stylesheet" href="style/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -104,67 +104,51 @@
 
     <!-- content -->
     <div data-aos="fade-up" data-aos-duration="1500">
-      <!-- About Us Section -->
-      <section class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4">
-          <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">
-              About Our Company
-            </h2>
-            <p class="mt-4 text-lg text-gray-600">
-                PT. Bumi Artha Raharja is a leading company in the field of sustainable energy solutions. Founded in 2005, we have been committed to providing innovative and eco-friendly energy solutions to our clients. Our team of experts consists of engineers, designers, and environmentalists who work tirelessly to develop cutting-edge technologies that harness the power of renewable energy sources such as solar, wind, and hydro power.
+      <div class="detail">
+        <div class="deskripsi-produk">
+          <img src="assets/41.png" alt="">
+          <div class="deskripsi">
+            <h2>Hydraulic</h2>
+            <p>
+              Kami menyediakan beragam jenis alat hidrolik termasuk cylinder boom dan cylinder ramp, yang dirancang untuk memberikan performa optimal dan 
+              keandalan yang tinggi dalam berbagai aplikasi industri.
             </p>
           </div>
         </div>
-      </section>
-
-      <section class="bg-gray-200 border-b py-8">
-        <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-          <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
-            Lorem ipsum dolor sit amet.
-          </h1>
-          <div class="w-full mb-4">
-            <div
-              class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-            ></div>
-          </div>
-
-          <div class="flex flex-wrap items-center justify-center">
-            <div class="w-5/6 sm:w-1/2 p-6">
-              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Our Vision
-              </h3>
-              <p class="text-gray-600 mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                quisquam consectetur reprehenderit numquam magnam.
-              </p>
-            </div>
-            <div class="w-full sm:w-1/2 p-6">
-              <img
-                class="w-full sm:h-96 object-cover mx-auto sm:mx-0 rounded"
-                src="https://source.unsplash.com/600x400/?nature"
-                alt="Nature"
-              />
-            </div>
-            <div class="w-full sm:w-1/2 p-6">
-              <img
-                class="w-full sm:h-96 object-cover mx-auto sm:mx-0 rounded"
-                src="https://source.unsplash.com/600x400/?water"
-                alt="Water"
-              />
-            </div>
-            <div class="w-5/6 sm:w-1/2 p-6">
-              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 text-right">
-                Our Mission
-              </h3>
-              <p class="text-gray-600 mb-8 text-right">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                quisquam consectetur reprehenderit numquam magnam.
-              </p>
-            </div>
+        <!--more from us-->
+        <div class="produk-lain">
+          <h2>More From Us</h2>
+          <div class="list-produk-detail">
+            <script>
+              let allproduk = null;
+              fetch("assets/produk.json")
+              .then(response=>response.json())
+              .then(data=>{
+                allproduk=data;
+                console.log(allproduk);
+                addDatatoHTML();
+              })
+              let containerproduk = document.querySelector('.list-produk-detail');
+              let kategori = 'Hydraulic';
+              function addDatatoHTML(){
+                allproduk.forEach(produk => {
+                  if(produk.kategori === kategori){
+                      let divproduk = document.createElement('div');
+                      divproduk.classList.add('item');
+                      divproduk.innerHTML= 
+                      `
+                        <img src="${produk.foto}" class="h-32 md:h-48 lg:h-64 object-cover w-full">  
+                        <h2>${produk.nama}</h2>
+                        <div class="deskripsi-produk">${produk.deskripsi}</div>
+                      `
+                      containerproduk.appendChild(divproduk);
+                  }
+                });
+              }
+            </script>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <script>

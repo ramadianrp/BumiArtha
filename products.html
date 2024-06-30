@@ -137,128 +137,50 @@
       <div>
         <h1 class="text-natgeo mt-20 mb-20">Our Products</h1>
       </div>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10 mb-10 p-5"
-      >
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="/assets/55.png"
-              alt="Shoes"
-              class="h-32 md:h-48 lg:h-64 object-cover w-full"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10 p-5" id="containerproduk">
+        <div class="list-produk">
+          <script>
+            let allproduk = null;
+            fetch("assets/category.json")
+            .then(response=>response.json())
+            .then(data=>{
+              allproduk=data;
+              // console.log(allproduk);
+              addDatatoHTML();
+            })
+            let containerproduk = document.querySelector('.list-produk');
+            function addDatatoHTML(){
+              allproduk.forEach(produk => {
+                let linkproduk = document.createElement('a');
+                linkproduk.setAttribute('href','#');
+                let divproduk = document.createElement('div');
+                divproduk.classList.add('item');
+                function maxtext(text,max){
+                  if(text.length <= max){
+                    return text;
+                  } else {
+                    let cuttext = text.substring(0,max);
+                    cuttext = cuttext.substring(0, cuttext.lastIndexOf(' '));
+                    return cuttext + '...';
+                  }
+                }
+                let deskripsi = maxtext(produk.deskripsi,228);
+                console.log(produk.deskripsi);
+                divproduk.innerHTML= `
+                    <img 
+                        src="${produk.foto}"
+                        class="h-32 md:h-48 lg:h-64 object-cover w-full">  
+                    <h2>${produk.kategori}</h2>
+                    <div class="deskripsi-produk">${deskripsi}</div>
+                `
+                containerproduk.appendChild(linkproduk);
+                linkproduk.appendChild(divproduk);
+              })
+            }
+          </script>
         </div>
       </div>
-    </div>
+    </div>  
 
     <script>
       AOS.init();
