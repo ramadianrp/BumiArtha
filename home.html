@@ -194,7 +194,7 @@
               function addDatatoHTML() {
                 allproduk.forEach((produk) => {
                   let linkproduk = document.createElement("a");
-                  linkproduk.setAttribute("href", "#");
+                  linkproduk.setAttribute("href", produk.link);
                   let divproduk = document.createElement("div");
                   divproduk.classList.add("item");
                   function maxtext(text, max) {

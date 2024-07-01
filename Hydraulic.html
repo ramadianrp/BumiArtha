@@ -27,9 +27,13 @@
         <a
           class="text-3xl font-bold font-heading"
           style="color: black"
-          href="#"
+          href="home.html"
         >
-          Logo
+          <img
+            src="/assets/LOGO PT BUMI ARTHA RAHARJA.JPG.png"
+            alt="Logo"
+            style="height: 50px; width: auto"
+          />
         </a>
         <!-- Nav Links -->
         <ul
@@ -110,7 +114,10 @@
           <div class="deskripsi">
             <h2>Hydraulic</h2>
             <p>
-              Kami menyediakan beragam jenis alat hidrolik termasuk cylinder boom dan cylinder ramp, yang dirancang untuk memberikan performa optimal dan 
+              Sebagai perusahaan yang berfokus pada penjualan dan distribusi alat berat, Bumi Artha menyediakan berbagai macam jenis hidrolik dan menawarkan 
+              solusi lengkap untuk kebutuhan konstruksi, industri, pertanian, dan lainnya. Produk-produk kami tidak hanya terkenal karena kualitasnya yang unggul, 
+              tetapi juga karena ketepatannya dalam memenuhi spesifikasi teknis yang ketat.<br>
+              Kami menyediakan beragam jenis alat hidrolik, yang dirancang untuk memberikan performa optimal dan 
               keandalan yang tinggi dalam berbagai aplikasi industri.
             </p>
           </div>
@@ -138,8 +145,7 @@
                       divproduk.innerHTML= 
                       `
                         <img src="${produk.foto}" class="h-32 md:h-48 lg:h-64 object-cover w-full">  
-                        <h2>${produk.nama}</h2>
-                        <div class="deskripsi-produk">${produk.deskripsi}</div>
+                        <h2>${produk.deskripsi}</h2>
                       `
                       containerproduk.appendChild(divproduk);
                   }
