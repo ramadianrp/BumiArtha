@@ -124,10 +124,19 @@ body {
 .detail .deskripsi-produk .deskripsi {
   h2 {
     text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
   padding: 0 30px;
-  text-align: justify;
-  width: 70%;
+  text-align: center;
+  width: 80%;
+}
+
+.detail .deskripsi-produk .deskripsi p {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .detail .deskripsi-produk .deskripsi i {
@@ -143,10 +152,13 @@ body {
   transform: scale(1.2) rotate(20deg);
 }
 
-.produk-lain {
+.produk-lain h2{
   margin: auto;
   text-align: center;
   max-width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .list-produk-detail {
@@ -171,10 +183,13 @@ body {
 
 .list-produk-detail .item img {
   width: 80%;
+  height: 95%;
+  margin-bottom: 10px;
 }
 
 .list-produk-detail .item p {
   word-wrap: break-word;
+  margin-top: 10px;
 }
 
 .deskripsi-produk .deskripsi i {
